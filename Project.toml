@@ -1,0 +1,4 @@
+name = "FastActivations"
+uuid = "f73916d7-f1f8-4ba1-9c05-cb0c1ef97587"
+authors = ["Nick Timmons <ngtimmons@gmail.com>"]
+version = "0.1.0"
