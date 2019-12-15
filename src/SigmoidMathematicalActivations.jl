@@ -2,42 +2,42 @@
 
 
 function expLim1_base(x)
-  x = one(x) + x / typeof(x).(1.0);
+  x = one(x) + x / oftype(x/1,1.0);
   x *= x;
   return x;
 end
 expLim1(x) = @fastmath expLim1_base(x)
 
 function expLim2_base(x)
-  x = one(x) + x / typeof(x).(2.0);
+  x = one(x) + x / oftype(x/1,2.0);
   x *= x; x *= x;
   return x;
 end
 expLim2(x) = @fastmath expLim2_base(x)
 
 function expLim4_base(x)
-  x = one(x) + x / typeof(x).(4.0);
+  x = one(x) + x / oftype(x/1,4.0);
   x *= x; x *= x;
   return x;
 end
 expLim4(x) = @fastmath expLim4_base(x)
 
 function expLim8_base(x)
-  x = one(x) + x / typeof(x).(8.0);
+  x = one(x) + x / oftype(x/1,8.0);
   x *= x; x *= x; x *= x;
   return x;
 end
 expLim8(x) = @fastmath expLim8_base(x)
 
 function expLim16_base(x)
-  x = one(x) + x / typeof(x).(16.0);
+  x = one(x) + x / oftype(x/1,16.0);
   x *= x; x *= x; x *= x; x *= x;
   return x;
 end
 expLim16(x) = @fastmath expLim16_base(x)
 
 function expLim32_base(x)
-  x = one(x) + x / typeof(x).(32.0);
+  x = one(x) + x / oftype(x/1,32.0);
   x *= x; x *= x; x *= x; x *= x;
   x *= x;
   return x;
@@ -45,7 +45,7 @@ end
 expLim32(x) = @fastmath expLim32_base(x)
 
 function expLim64_base(x)
-  x = one(x) + x / typeof(x).(64.0);
+  x = one(x) + x / oftype(x/1,64.0);
   x *= x; x *= x; x *= x; x *= x;
   x *= x; x *= x;
   return x;
@@ -53,7 +53,7 @@ end
 expLim64(x) = @fastmath expLim64_base(x)
 
 function expLim128_base(x)
-  x = one(x) + x / typeof(x).(128.0);
+  x = one(x) + x / oftype(x/1,128.0);
   x *= x; x *= x; x *= x; x *= x;
   x *= x; x *= x; x *= x;
   return x;
@@ -61,7 +61,7 @@ end
 expLim128(x) = @fastmath expLim128_base(x)
 
 function expLim256_base(x)
-  x = one(x) + x / typeof(x).(256.0);
+  x = one(x) + x / oftype(x/1,256.0);
   x *= x; x *= x; x *= x; x *= x;
   x *= x; x *= x; x *= x; x *= x;
   return x;
@@ -69,7 +69,7 @@ end
 expLim256(x) = @fastmath expLim256_base(x)
 
 function expLim512_base(x)
-  x = one(x) + x / typeof(x).(512.0);
+  x = one(x) + x / oftype(x/1,512.0);
   x *= x; x *= x; x *= x; x *= x;
   x *= x; x *= x; x *= x; x *= x;
   x *= x;
@@ -78,7 +78,7 @@ end
 expLim512(x) = @fastmath expLim512_base(x)
 
 function expLim1024_base(x)
-  x = one(x) + x / typeof(x).(1024.0);
+  x = one(x) + x / oftype(x/1,1024.0);
   x *= x; x *= x; x *= x; x *= x;
   x *= x; x *= x; x *= x; x *= x;
   x *= x; x *= x;
@@ -87,7 +87,7 @@ end
 expLim1024(x) = @fastmath expLim1024_base(x)
 
 function expLim2048_base(x)
-  x = one(x) + x / typeof(x).(2048.0);
+  x = one(x) + x / oftype(x/1,2048.0);
   x *= x; x *= x; x *= x; x *= x;
   x *= x; x *= x; x *= x; x *= x;
   x *= x; x *= x; x *= x;
@@ -96,7 +96,7 @@ end
 expLim2048(x) = @fastmath expLim2048_base(x)
 
 function expLim4096_base(x)
-  x = one(x) + x / typeof(x).(4096.0);
+  x = one(x) + x / oftype(x/1,4096.0);
   x *= x; x *= x; x *= x; x *= x;
   x *= x; x *= x; x *= x; x *= x;
   x *= x; x *= x; x *= x; x *= x;
@@ -105,7 +105,7 @@ end
 expLim4096(x) = @fastmath expLim4096_base(x)
 
 function expLim8192_base(x)
-  x = one(x) + x / typeof(x).(8192.0);
+  x = one(x) + x / oftype(x/1,8192.0);
   x *= x; x *= x; x *= x; x *= x;
   x *= x; x *= x; x *= x; x *= x;
   x *= x; x *= x; x *= x; x *= x;
@@ -115,7 +115,7 @@ end
 expLim8192(x) = @fastmath expLim8192_base(x)
 
 function expLimpow2_14_base(x)
-  x = one(x) + x / typeof(x).(2^14);
+  x = one(x) + x / oftype(x/1,2^14);
   x *= x; x *= x; x *= x; x *= x;
   x *= x; x *= x; x *= x; x *= x;
   x *= x; x *= x; x *= x; x *= x;
@@ -125,7 +125,7 @@ end
 expLimpow2_14(x) = @fastmath expLimpow2_14_base(x)
 
 function expLimpow2_15_base(x)
-  x = one(x) + x / typeof(x).(2^15);
+  x = one(x) + x / oftype(x/1,2^15);
   x *= x; x *= x; x *= x; x *= x;
   x *= x; x *= x; x *= x; x *= x;
   x *= x; x *= x; x *= x; x *= x;
@@ -135,7 +135,7 @@ end
 expLimpow2_15(x) = @fastmath expLimpow2_15_base(x)
 
 function expLimpow2_16_base(x)
-  x = one(x) + x / typeof(x).(2^16);
+  x = one(x) + x / oftype(x/1,2^16);
   x *= x; x *= x; x *= x; x *= x;
   x *= x; x *= x; x *= x; x *= x;
   x *= x; x *= x; x *= x; x *= x;
@@ -145,7 +145,7 @@ end
 expLimpow2_16(x) = @fastmath expLimpow2_16_base(x)
 
 function expLimpow2_20_base(x)
-  x = one(x) + x / typeof(x).(2^20);
+  x = one(x) + x / oftype(x/1,2^20);
   x *= x; x *= x; x *= x; x *= x;
   x *= x; x *= x; x *= x; x *= x;
   x *= x; x *= x; x *= x; x *= x;
@@ -156,7 +156,7 @@ end
 expLimpow2_20(x) = @fastmath expLimpow2_20_base(x)
 
 function expLimpow2_24_base(x)
-  x = one(x) + x / typeof(x).(2^24);
+  x = one(x) + x / oftype(x/1,2^24);
   x *= x; x *= x; x *= x; x *= x;
   x *= x; x *= x; x *= x; x *= x;
   x *= x; x *= x; x *= x; x *= x;
