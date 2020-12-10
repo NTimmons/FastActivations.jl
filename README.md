@@ -28,7 +28,7 @@ For `tanh` we provide fitted approximations using Taylor and Pade curve fit mode
 
 | Fitted Functions  | Continuous Fraction    | Serpentine
 | ----------------- | ------------- |--------------|
-|![alt text](https://github.com/NTimmons/FastActivations.jl/blob/master/docs/tanhtaylor.png)    | ![alt text](https://github.com/NTimmons/FastActivations.jl/blob/master/docs/tanhcontfrac.png)  | ![alt text](https://github.com/NTimmons/FastActivations.jl/blob/master/docs/tanhcontfrac.png)   | ![alt text](https://github.com/NTimmons/FastActivations.jl/blob/master/docs/tanhserpentine.png)  |
+|![alt text](https://github.com/NTimmons/FastActivations.jl/blob/master/docs/tanhtaylor.png)    | ![alt text](https://github.com/NTimmons/FastActivations.jl/blob/master/docs/tanhcontfrac.png)  | ![alt text](https://github.com/NTimmons/FastActivations.jl/blob/master/docs/tanhserpentine.png)  |
 | ![alt text](https://github.com/NTimmons/FastActivations.jl/blob/master/docs/tanhpade.png)    | ![alt text](https://github.com/NTimmons/FastActivations.jl/blob/master/docs/tanhclampcont.png)  |    |
 
 
